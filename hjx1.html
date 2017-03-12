@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<style>
+.rowParent, .columnParent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+}
+.columnParent {
+	flex-direction: row;
+	flex-shrink: 1;
+
+}
+.flexChild {
+	flex: 1;
+	align-self: auto;
+}
+</style>
+	<script type="text/javascript" src="js/prefixfree.dynamic-dom.js"></script>
+	<title>无标题文档</title>
+	</head>
+
+	<body>
+    <div  class="flexChild rowParent" style="background-color: aqua">
+      <div  class="flexChild" style="background-color: #494141 flex-grow：1"><img src="img/5/e2.png" /></div>
+      <div  class="flexChild columnParent " tyle="background-color:#7208B8 flex-grow：1">
+        <div  class="flexChild" style="background-color:#BF2124" ><img src="img/5/e3.png" ></div>
+        <div  class="flexChild" style="background-color:#7208B8"><img src="img/5/e4.png"  />
+        </div>
+      </div>
+    </div>
+</body>
+</html>
