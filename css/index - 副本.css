@@ -1,0 +1,433 @@
+
+/*--------------------------------------slide4--------img图片样式-----------------------------*/
+
+.f41 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;/*子项在容器内水平对齐方式：flex-start | flex-end | center | space-between | space-around*/
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;/*子项在容器内垂直对齐方式：flex-start | flex-end | center | baseline | stretch;*/
+	background-color: black;
+}
+/*---------------子容器---第一列------------------*/
+.z41 {
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	    -ms-flex-order: 0;
+	        order: 0;/*子项们的排列顺序：0-999999*/
+	/*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+	-ms-grid-row-align: auto;
+	    -webkit-align-self: auto;
+	        -ms-flex-item-align: auto;
+	        align-self: auto;/*定义单个子项与其他项目不一样的对齐方式覆盖父容器的align-items属性*/
+	height: 10%;
+	width: 100%;
+	margin: 0.2rem;
+	background-color: #2F36B4;
+}
+.h31 {
+	background-color: aqua;
+	font-size: 24px;
+	width: 100%;
+}
+/*---------------子容器---第二列------------------*/
+.z42 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	    -ms-flex-order: 0;
+	        order: 0;/*子项们的排列顺序：0-999999*/
+	/*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	height: 100%;
+	width: 100%;
+	margin: 0.2rem;
+	background-color: #C4E83F;
+}
+/* <!-------左边--------->*/
+.z421 {	
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	    -ms-flex-order: 0;
+	        order: 0;/*子项们的排列顺序：0-999999*/
+	/*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	height: 100%;
+	width: 100%;
+	margin: 0.2rem;
+}
+.img421 {
+    order:0;
+	height: 100%;
+	width: 10rem;
+	z-index: 1;
+}
+.h421 {
+	order:1;
+	z-index: 4;
+	font-weight: bold;
+	color: #0B0597;
+	font-size: 18px;
+	left: 20%;
+	top: 41%;
+	position: relative;
+}
+}
+/* <!-------右边--------->*/
+.z422 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	    -ms-flex-order: 0;
+	        order: 0;/*子项们的排列顺序：0-999999*/
+	/*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	height: 100%;
+	width: 100%;
+	margin: 0.2rem;
+}
+.img422 {
+	height: 14%;
+	width: 16%;
+	z-index: 5;
+}
+.h422 {
+	z-index: 4;
+	font-weight: bold;
+	text-align: center;
+	color: #0B0597;
+	font-size: 21px;
+	left: 44%;
+	top: 14%;
+	position: absolute;
+}
+/*---------------子容器---第三列------------------*/
+/*---------------子容器---------------------*/
+.z43 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	    -ms-flex-order: 0;
+	        order: 0;/*子项们的排列顺序：0-999999*/
+	/*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	height: 100%;
+	width: 100%;
+	margin: 0.2rem;
+	background-color: #C4E83F;
+}
+.img431 {
+	height: 90%;
+	width: 60%;
+	z-index: 2;
+}
+.h431 {
+	z-index: 4;
+	font-weight: bold;
+	text-align: center;
+	color: #0B0597;
+	font-size: 18px;
+	right: 24%;
+	top: 41%;
+	position: absolute;
+}
+/*---------------子容器---第四列------------------*/
+
+.z44 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	    -ms-flex-order: 0;
+	        order: 0;/*子项们的排列顺序：0-999999*/
+	/*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	height: 100%;
+	width: 100%;
+	margin: 0.2rem;
+	background-color: #C4E83F;
+}
+/* <!-------左边--------->*/
+.z441 {
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	    -ms-flex-order: 0;
+	        order: 0;/*子项们的排列顺序：0-999999*/
+	/*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+	height: 100%;
+	width: 100%;
+	margin: 0.2rem;
+}
+.img441 {
+	height: 94%;
+	width: 90%;
+	z-index: 2;
+}
+.h441 {
+	z-index: 1;
+	color: #D711C9;
+	font-weight: bold;
+	text-align: center;
+	font-size: 18px;
+	left: -1.4rem;
+	top: -16rem;
+	position: relative;
+}
+/* <!-------右边--------->*/
+.z442 {
+	height: 100%;
+	width: 100%;
+	margin: 0.2rem;
+}
+.img442 {
+	height: 94%;
+	width: 114%;
+	z-index: 2;
+}
+.h442 {
+	z-index: 4;
+	font-weight: bold;
+	text-align: center;
+	color: #0B0597;
+	font-size: 16px;
+	left: 1rem;
+	top: -14rem;
+	position: relative;
+}
+/*-- --------slide4--------img图片样式----结束------------------ --*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------slide1--------img图片样式------------------*/
+
+.s1 {
+	
+	display: -webkit-box;
+	
+	display: -webkit-flex;
+	
+	display: -ms-flexbox;
+	
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;/*子项在容器内水平对齐方式：flex-start | flex-end | center | space-between | space-around*/
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;/*子项在容器内垂直对齐方式：flex-start | flex-end | center | baseline | stretch;*/
+	background-repeat: no-repeat;
+	background-color: #000000;
+}
+/*---------------子容器---------------------*/
+.z1_1{
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;/*子项们的排列顺序：0-999999*/
+    /*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+                -ms-grid-row-align: auto;
+            align-self: auto;/*定义单个子项与其他项目不一样的对齐方式覆盖父容器的align-items属性*/
+    height: 100%;
+    width: 100%;
+    }
+.img1_1 {
+	width: 100%;
+	height: 10rem;
+	margin-top: 4rem;
+}
+.img1_2 {
+	width: 40%;
+	height: 10rem;
+	margin-left: 30%
+}
+
+.img1_3 {
+	width: 100%;
+	background-color: #322E2E;
+	font-size: 20px;
+	color: #D1C8C8;
+	font-weight: bold;
+	text-align: center;
+}
+.img1_4 {
+	height: auto;
+	width: 100%;
+	background-color: #C0930D;
+	color: #0E2088;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: -10rem;
+	margin-left: 44%;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+/**************************************** 主幻灯片 1 ****************************************/
+/* 幻灯片 1 */
+
+
+/* 幻灯片 2 */
+
+/* 幻灯片 3 */
+
+/* 幻灯片 4 */
+
+/* 幻灯片 5 */

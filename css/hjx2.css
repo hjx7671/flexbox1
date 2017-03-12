@@ -1,0 +1,113 @@
+html body{font-size: 12px;  width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;}
+     /*---------------父容器---------------------*/
+    .f1{
+        display: flex;
+        flex-direction: column;/*子项在容器内的排列方向：row | row-reverse | column | column-reverse;*/
+        flex-wrap: nowrap;/*子项在容器内的换行效果：nowrap | wrap | wrap-reverse;*/
+        justify-content:space-around;/*子项在容器内水平对齐方式：flex-start | flex-end | center | space-between | space-around*/
+        align-items: flex-start;/*子项在容器内垂直对齐方式：flex-start | flex-end | center | baseline | stretch;*/
+        align-content: flex-start;/*子项在容器内换行后垂直对齐方式：flex-start | flex-end | center | space-between | space-around | stretch;*/
+        width:100%;
+        height:40%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 2rem;
+		background-color: aqua;
+        }
+    
+    /*---------------父容器---------------------*/
+.f21{
+    display: flex;
+    flex-direction: row;/*子项在容器内的排列方向：row | row-reverse | column | column-reverse;*/
+    flex-wrap: nowrap;/*子项在容器内的换行效果：nowrap | wrap | wrap-reverse;*/
+    justify-content: space-between;/*子项在容器内水平对齐方式：flex-start | flex-end | center | space-between | space-around*/
+    align-items: flex-start;/*子项在容器内垂直对齐方式：flex-start | flex-end | center | baseline | stretch;*/
+    align-content: flex-start;/*子项在容器内换行后垂直对齐方式：flex-start | flex-end | center | space-between | space-around | stretch;*/
+    width:100%;
+    height: 100%;
+    margin: 0.8rem;
+    padding: 0px;
+    font-size: 2rem;
+    }
+    /*---------------子容器---------------------*/
+.z1{
+    order: 0;/*子项们的排列顺序：0-999999*/
+    /*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+    flex: 2 1 auto;
+    align-self: auto;/*定义单个子项与其他项目不一样的对齐方式覆盖父容器的align-items属性*/
+    height: 8rem;
+    width: 10rem;
+    margin: 0.2rem;
+    }
+  /*---------------子容器---------------------*/
+  .imgz1{      
+      height: 8rem;
+      width: 95%;
+      margin: 0rem;
+      }
+.z2{
+    display: flex;
+    flex-direction: column;
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+    height: 8rem;
+    width: 10rem;
+    margin: 0rem;
+    }
+
+.z3{
+    order: 0;
+    flex: 3 1 auto;
+    align-self: auto;
+    height: 5rem;
+
+    }
+    .imgz31{      
+      height: 3.4rem;
+      width: 90%;
+      margin: 0.2rem;
+      margin-top: 0.8rem;
+      z-index: 1;
+      }
+      .imgz32{      
+      height: 2.4rem;
+      width: 80%;
+      margin: 0.4rem;
+      z-index: 2;
+     position:relative;
+     top:-4rem;
+     left: 0.2rem;
+      }
+
+.z4{
+    order: 0;
+    flex: 0.5 1 auto;
+    align-self: auto;
+    height: 3rem;
+    margin: 0rem;
+    }
+
+.imgz41{      
+      height: 1.4rem;
+      width: 60%;
+      z-index: 1;
+      margin-left: 2rem;
+      margin-top: 0rem;
+      }
+.imgz42{
+	height: 1rem;
+	width: 34%;
+	z-index: 2;
+	position: relative;
+	top: -2.9rem;
+	left: 4rem;
+	font-size: 1rem;
+	color: #C3BEBE;
+	font-weight: bold;	
+ 
+      }

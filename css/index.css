@@ -1,0 +1,113 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------slide1--------img图片样式------------------*/
+
+.s1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: #000000;
+    /*子项在容器内垂直对齐方式：flex-start | flex-end | center | baseline | stretch;*/
+    background-repeat: no-repeat;
+
+    font-size: 12px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /*子项在容器内水平对齐方式：flex-start | flex-end | center | space-between | space-around*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/*---------------子容器---------------------*/
+
+.z1_1 {
+    width: 100%;
+    /*定义单个子项与其他项目不一样的对齐方式覆盖父容器的align-items属性*/
+    height: 100%;
+
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    /*子项们的排列顺序：0-999999*/
+    /*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+}
+
+.img1_1 {
+    width: 100%;
+    height: 10rem;
+    margin-top: 4rem;
+}
+
+.img1_2 {
+    width: 40%;
+    height: 10rem;
+    margin-left: 30%
+}
+
+.img1_3 {
+    width: 100%;
+
+    text-align: center;
+
+    color: #D1C8C8;
+    background-color: #322E2E;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img1_4 {
+    width: 100%;
+    height: auto;
+    margin-top: -10rem;
+    margin-left: 44%;
+
+    color: #0E2088;
+    background-color: #C0930D;
+
+    font-size: 24px;
+    font-weight: bold;
+}

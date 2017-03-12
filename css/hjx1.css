@@ -1,0 +1,871 @@
+@charset "utf-8";
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12px!important;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next {
+    background-image: url("../img/icon_up.png");
+    background-size: 80%;
+    top: 95%;
+    left: 50%;
+    -webkit-animation: fadeInUp ease 1s both infinite;
+    animation: fadeInUp ease 1s both infinite;
+}
+
+
+/*设置标签间距*/
+
+.hj {
+    margin: 6px;
+    padding: 0;
+}
+
+.hj2 {
+    margin: 2px;
+    padding: 0;
+}
+
+
+/*-----------------------------------------slide2样式-------------------------------*/
+
+.s2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    /*子项在容器内的换行效果：nowrap | wrap | wrap-reverse;*/
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    /*子项在容器内水平对齐方式：flex-start | flex-end | center | space-between | space-around*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*子项在容器内垂直对齐方式：flex-start | flex-end | center | baseline | stretch;*/
+    -ms-flex-line-pack: center;
+    align-content: center;
+    /*子项在容器内换行后垂直对齐方式：flex-start | flex-end | center | space-between | space-around | stretch;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF8604;
+    font-size: 1.4rem;
+}
+
+
+/*---------------子容器---------------------*/
+
+.z2_1 {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    /*子项们的排列顺序：0-999999*/
+    /*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -ms-grid-row-align: auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    /*定义单个子项与其他项目不一样的对齐方式覆盖父容器的align-items属性*/
+    height: 100%;
+    width: 100%;
+    margin: 0.1rem;
+}
+
+
+/*-----------------------------------------slide3样式-------------------------------*/
+
+.s3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /*子项在容器内的排列方向：row | row-reverse | column | column-reverse;*/
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    /*子项在容器内的换行效果：nowrap | wrap | wrap-reverse;*/
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    /*子项在容器内水平对齐方式：flex-start | flex-end | center | space-between | space-around*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*子项在容器内垂直对齐方式：flex-start | flex-end | center | baseline | stretch;*/
+    -ms-flex-line-pack: center;
+    align-content: center;
+    /*子项在容器内换行后垂直对齐方式：flex-start | flex-end | center | space-between | space-around | stretch;*/
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    background: #FF8604;
+}
+
+.z3_1 {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    /*子项们的排列顺序：0-999999*/
+    /*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999
+     /子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -ms-grid-row-align: auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    /*定义单个子项与其他项目不一样的对齐方式覆盖父容器的align-items属性*/
+    height: 100%;
+    width: 100%;
+    margin: 0.1rem;
+}
+
+body {
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------------父容器---------------------*/
+
+
+/*-------------h标签内文字样式---------*/
+
+.ha {
+    background-color: #1206A7;
+    color: #E70CE5;
+    font-weight: bolder;
+}
+
+.hb {
+    background-color: #1206A7;
+    color: #E70CE5;
+    font-weight: bolder;
+}
+
+.hc {
+    background-color: #1206A7;
+    color: #E70CE5;
+    font-weight: bolder;
+}
+
+
+/*---------p标签内文字样式------------*/
+
+.pa {
+    border-style: dotted;
+    border-color: #EB0F45;
+    color: #470772;
+    font-weight: bolder;
+}
+
+.pb {
+    border-style: dotted;
+    border-color: #EB0F45;
+    color: #470772;
+    font-weight: bolder;
+}
+
+.pc {
+    border-style: dotted;
+    border-color: #EB0F45;
+    color: #D5CADC;
+    font-weight: bolder;
+}
+
+.pd {
+    border-style: dotted;
+    border-color: #EB0F45;
+    color: #A705A1;
+    font-weight: bolder;
+}
+
+
+/*---------p标签内文字底纹样式--------*/
+
+.box1 {
+    border-radius: 13px;
+    background-image: -ms-linear-gradient( 90deg, rgb(216, 210, 217) 1%, rgb(235, 234, 222) 100%);
+    z-index: 6;
+}
+
+.box2 {
+    border-radius: 13px;
+    background-color: rgb(250, 205, 137);
+}
+
+.box3 {
+    border-radius: 13px;
+    background-color: rgb(248, 181, 81);
+}
+
+.box4 {
+    border-radius: 13px;
+    background-color: rgb(227, 137, 218);
+}
+
+.box5 {
+    border-radius: 13px;
+    background-color: rgb(0, 0, 255);
+}
+
+.box6 {
+    border-radius: 13px;
+    background-color: rgba(149, 149, 200, 1.00)
+}
+
+
+/*--------------------------------------slide4--------img图片样式-----------------------------*/
+
+
+/*---------------第一行-------------------*/
+
+.h31 {
+    background-color: #E2B01C;
+    font-size: 24px;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+
+/*---------------第二行-------------------*/
+
+.cos1 {
+    height: auto;
+    margin-top: 0.4rem;
+}
+
+.col421 {
+    background-color: #41443e;
+    height: 20%;
+}
+
+.h421 {
+    z-index: 1;
+    color: #D711C9;
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+}
+
+
+/*-------------第三行-----------*/
+
+.box422 {
+    width: 100%;
+    background-color: #8C65AD;
+}
+
+.col431 {
+    width: 100%;
+    background-color: #717F81;
+}
+
+.h431 {
+    z-index: 1;
+    color: #CBEC79;
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+}
+
+
+/*-------------第四行-----------*/
+
+.col441 {
+    width: 100%;
+    background-color: #17454B;
+}
+
+.h441 {
+    z-index: 1;
+    color: #DBDFC8;
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+}
+
+
+/*-------------第五行-----------*/
+
+.col451 {
+    width: 100%;
+    background-color: #57EB82;
+}
+
+.h451 {
+    z-index: 1;
+    color: #642BF0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+}
+
+
+/*-------------第六行-----------*/
+
+.col461 {
+    width: 100%;
+    background-color: #0A0663;
+}
+
+.h461 {
+    z-index: 1;
+    color: #E6A754;
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+}
+/*-- -----------------------slide4--------img图片样式----结束--------------------------------- --*/
+/* --------------------------------slide5-- -第五页新三原色D系列： -----------------------------*/
+/*---------------父容器---------------------*/
+
+.f1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /*子项在容器内的排列方向：row | row-reverse | column | column-reverse;*/
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    /*子项在容器内的换行效果：nowrap | wrap | wrap-reverse;*/
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    /*子项在容器内水平对齐方式：flex-start | flex-end | center | space-between | space-around*/
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    /*子项在容器内垂直对齐方式：flex-start | flex-end | center | baseline | stretch;*/
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    /*子项在容器内换行后垂直对齐方式：flex-start | flex-end | center | space-between | space-around | stretch;*/
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+}
+/*---------------父容器---------------------*/
+
+.f21 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    /*子项在容器内的排列方向：row | row-reverse | column | column-reverse;*/
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    /*子项在容器内的换行效果：nowrap | wrap | wrap-reverse;*/
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /*子项在容器内水平对齐方式：flex-start | flex-end | center | space-between | space-around*/
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    /*子项在容器内垂直对齐方式：flex-start | flex-end | center | baseline | stretch;*/
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    /*子项在容器内换行后垂直对齐方式：flex-start | flex-end | center | space-between | space-around | stretch;*/
+    width: 100%;
+    height: 28%;
+    margin: 0.8rem;
+    padding: 0px;
+    font-size: 2rem;
+}
+/*---------------子容器---------------------*/
+.z1 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    /*子项们的排列顺序：0-999999*/
+    /*子项放大时分配比例flex-grow：0-9999/子项缩小时分配比例flex-shrink:0-9999 /*子项的初始宽度flex-basis: 20rem | [percentage]  | auto;*/
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 auto;
+            flex: 2 1 auto;
+    /*定义单个子项与其他项目不一样的对齐方式覆盖父容器的align-items属性*/
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    height: 8rem;
+    width: 10rem;
+    margin: 0.2rem;
+}
+/*---------------子容器---------------------*/
+.imgz1 {
+    height: 8rem;
+    width: 95%;
+    margin: 0rem;
+}
+.z2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    height: 8rem;
+    width: 10rem;
+    margin: 0rem;
+}
+
+.z3 {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 3;
+    -ms-flex: 3 1 auto;
+    flex: 3 1 auto;
+    -ms-grid-row-align: auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    height: 5rem;
+}
+
+.imgz31 {
+    height: 3.4rem;
+    width: 90%;
+    margin: 0.2rem;
+    margin-top: 0.8rem;
+    z-index: 1;
+}
+
+.imgz32 {
+    height: 2.4rem;
+    width: 80%;
+    margin: 0.4rem;
+    z-index: 2;
+    position: relative;
+    top: -4rem;
+    left: 0.2rem;
+}
+
+.z4 {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 0.5;
+    -ms-flex: 0.5 1 auto;
+    flex: 0.5 1 auto;
+    -ms-grid-row-align: auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    height: 3rem;
+    margin: 0rem;
+}
+
+.imgz41 {
+    height: 1.4rem;
+    width: 60%;
+    z-index: 1;
+    margin-left: 2%;
+    margin-top: -0.4%;
+}
+
+.imgz42 {
+    height: 1rem;
+    width: 34%;
+    z-index: 2;
+    position: absolute;
+    margin-left:-18%;
+    margin-top:2%;
+    font-size: 1rem;
+    color: #C3BEBE;
+    font-weight: bold;
+}
+
+.col2 {
+    background-color: #E4EE15;
+    height: 40%;
+}
+
+.col3 {
+    background-color: rgba(17, 31, 157, 0.77);
+    height: 50%;
+}
+
+.col4 {
+    background-color: rgba(63, 219, 24, .77);
+    height: 60%;
+}
+/* ------------------结束----------slide5-- -第五页新三原色D系列：结束 -----------------------------*/
+
+
+/*------------------各种CSS3形状资源-------------------*/
+
+.circle1 {
+    width: 120rem;
+    height: 120rem;
+    border-radius: 60rem;
+}
+
+
+/*椭圆*/
+
+.oval1 {
+    width: 200rem;
+    height: 100rem;
+    border-radius: 100rem / 50rem;
+}
+
+
+/*------------------------------------音乐模块---------------------------------------*/
+
+
+/*音乐按钮动画*/
+
+@-webkit-keyframes moveRo {
+    from {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveRo {
+    from {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes openRo {
+    from {}
+    to {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
+
+@keyframes openRo {
+    from {}
+    to {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
+
+
+/*小音符动画*/
+
+@-webkit-keyframes openIconRo {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes openIconRo {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+
+/*结尾 ----------------*/
+
+
+/*音乐*/
+
+.music {
+    position: fixed;
+    z-index: 1111;
+    right: 4px;
+    top: 4px;
+}
+
+.open {
+    /*-webkit-animation: moveIconRo ease 3.5s both infinite;*/
+    -webkit-animation: moveRo linear 3.5s infinite;
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+}
+
+.icon-music {
+    width: 25px;
+    height: 25px;
+    background: url(../img/icon-muisc.png);
+    background-size: 100% 100%;
+    display: block;
+}
+
+.music-span {
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background: url(../img/music-span.png);
+    background-size: 100% 100%;
+    -webkit-animation: openRo ease 1.2s both infinite;
+    animation: openRo ease 1.2s both infinite;
+    z-index: -1;
+}
+
+.music_text {
+    color: #000;
+    margin-left: 5px;
+    font-size: 20px;
+    opacity: 0;
+}
+
+
+/*音乐模块结束*/
+
+
+/*-------------------------------音乐模块结束-------------------------------------*/
+
+
+/*-----------------------------alert样式--------------------------------------*/
+
+.alert {
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    margin: 10px auto;
+    border-radius: 5px;
+    line-height: 30px;
+    cursor: pointer;
+    background: #4ab819;
+}
+
+.confirm {
+    background: #196fb8;
+}
+
+.open {
+    background: #f88408;
+}
+
+.toast {
+    background: #f80851;
+}
+
+.later {
+    background: #a9a9a9;
+}
+
+.win {
+    display: none;
+}
+
+.mask-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background-color: black;
+    z-index: 99998;
+    top: 0px;
+    left: 0px;
+}
+
+.window-panel {
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.window-panel .title-panel {
+    position: absolute;
+    height: 36px;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.window-panel .title {
+    position: absolute;
+    height: 36px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    line-height: 36px;
+    vertical-align: middle;
+    background-color: whitesmoke;
+    /*标题背景色*/
+    border-bottom: 1px solid rgb(233, 233, 233);
+    z-index: 1;
+}
+
+.window-panel h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.window-panel .close-btn {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    right: 0px;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    background-color: #DBDBDB;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.window-panel .close-btn:hover {
+    background-color: #ccc;
+}
+
+.window-panel .body-panel {
+    position: absolute;
+    width: 100%;
+    top: 36px;
+    border-radius: 0 0 4px 4px;
+    z-index: 1;
+    background: #fff;
+    background-image: url(../img/alert/wenli.png);
+}
+
+.window-panel .body-panel.toast-panel {
+    position: absolute;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.window-panel .content, .window-panel .btns {
+    text-align: center;
+}
+
+.window-panel .content {
+    padding: 10px 10px 0px 10px;
+    font-size: 16px;
+    min-height: 40px;
+    line-height: 22px;
+}
+
+.window-panel .content.toast-content {
+    padding: 0;
+    min-height: 0;
+}
+
+.window-panel .w-btn {
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #DE5923;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+    margin: 0 10px 0px 10px;
+    border: none;
+}
+
+.window-panel .w-btn:hover {
+    background-color: #DA3E00;
+}
+
+.window-panel .w-btn:focus {
+    outline: 0 none;
+}
+
+
+/*-----------------------------alert样式结束--------------------------------------*/
