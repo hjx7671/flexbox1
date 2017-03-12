@@ -36,8 +36,63 @@
 <body>
     <div id="swiper" class="swiper-container">
         <div class="swiper-wrapper">
-          <!-- ------------ -第五页新三原色D系列： ------------------>
-          <div class="swiper-slide f51">
+            <!-- ------------ -第五页新三原色D系列： ------------------>
+            <div class="swiper-slide f5_1">
+                <!-- --------------第一行-----新三原色D系列新特性------------- -->
+                <div class="z5_1">
+                    <h3 class="ani  h51" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">新三原色D系列新特性</h3>
+                    <h3 class="ani  h52 " swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">染色同步性好</h3>
+                </div>
+                <!-- /*--------------第二行-----分散糖色1%上染同步性-------------*/ -->
+                <div class="z52">
+                    <h3 class="ani h521" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">分散糖色1%上染同步性</h3>
+                    <div class="z521">
+                        <img src="img/6/CCI20161126_0006_03.png" />
+                        <img src="img/6/CCI20161126_0006_04.png">
+                        <img src="img/6/CCI20161126_0006_05.png" />
+                        <img src="img/6/CCI20161126_0006_06.png">
+                        <img src="img/6/CCI20161126_0006_07.png" />
+                        <img src="img/6/CCI20161126_0006_08.png">
+                        <img src="img/6/CCI20161126_0006_09.png" />
+                        <img src="img/6/CCI20161126_0006_10.png">
+                        <img src="img/6/CCI20161126_0006_11.png">
+                    </div>
+                    <img src="img/6/130度.png" />
+                </div>
+                <!-- /*--------------第二行-----分散糖色1%上染同步性-------------*/ -->
+                <div class="z52">
+                    <h3 class="ani h521 " swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">分散糖色1%上染同步性</h3>
+                    <div class="z521">
+                        <img src="img/6/h1.png" />
+                        <img src="img/6/h2.png">
+                        <img src="img/6/h3.png" />
+                        <img src="img/6/h4.png">
+                        <img src="img/6/h5.png" />
+                        <img src="img/6/h6.png">
+                        <img src="img/6/h7.png" />
+                        <img src="img/6/h8.png">
+                        <img src="img/6/h9.png">
+                    </div>
+                    <img src="img/6/130度.png" />
+                </div>
+                <div class="z52">
+                    <h3 class="ani h521 " swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">分散糖色1%上染同步性</h3>
+                    <div class="z521">
+                        <img src="img/6/b1.png" />
+                        <img src="img/6/b2.png">
+                        <img src="img/6/b3.png" />
+                        <img src="img/6/b4.png">
+                        <img src="img/6/b5.png" />
+                        <img src="img/6/b6.png">
+                        <img src="img/6/b7.png" />
+                        <img src="img/6/b8.png">
+                        <img src="img/6/b9.png">
+                    </div>
+                    <img src="img/6/130度.png" />
+                </div>
+                <div class="z5_3">
+                    由上图可以看出1%深度时染料从90度上染到120度上染平衡，3%深度时染料从110度上染到125度上染平衡，颜色只有深浅变化，色相变化很小；说明新三原色D系列染色同步性好，配伍性优良；可有效避免头尾差，匹差，色花现象，为染得均匀坚牢的颜色打下了基础。
+                </div>
 
 
 
@@ -48,12 +103,7 @@
 
 
 
-
-
-
-
-
-          </div>
+            </div>
 
             <!--  分页实例-->
             <div class="swiper-slide">
@@ -124,7 +174,7 @@
     <div class="music">
         <i class="icon-music open" num="1"></i>
         <i class="music-span"></i>
-        <audio id="aud" src="music/m1.mp31" loop="loop" autoplay></audio>
+        <audio id="aud" src="music/m1.mp31" loop autoplay></audio>
         <!--  <div class="music_text">开启</div>-->
     </div>
     -
@@ -147,7 +197,6 @@
         loop: true,
         observer: true, //修改swiper自己或子元素时，自动初始化swiper
         mousewheelControl: true,
-
         onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
             swiperAnimateCache(swiper);
             swiperAnimate(swiper); //隐藏动画元素
@@ -155,15 +204,11 @@
         },
         onSlideChangeStart: function() {
             //			if(swiper.activeIndex==1){mizhu.alert('欢迎来到双力精化', '希望新三原色为您创造效益');}
-
         },
-
         onSlideChangeEnd: function(swiper) { //初始化完成开始动画
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
             swiper.container[0].style.height = swiper.slides[swiper.activeIndex].offsetHeight + 'px';
         },
-
-
     });
 
     // 第 1 个子swiper幻灯片
@@ -172,7 +217,6 @@
         grabCursor: true,
         loop: true,
         observer: true, //修改swiper自己或子元素时，自动初始化swiper
-
     });
     // 第 111 个子swiper幻灯片
     var mySwiper_child111 = new Swiper('.swiper-container-child111', {
@@ -180,7 +224,6 @@
         grabCursor: true,
         loop: true,
         observer: true, //修改swiper自己或子元素时，自动初始化swiper
-
     });
 
     // 第 111 个子swiper幻灯片
@@ -217,6 +260,11 @@
         }
 
     }); //	音乐
+
+
+
+
+
 </script>
 
 </html>
